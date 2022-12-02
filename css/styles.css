@@ -8,6 +8,7 @@
     --background-color-hero-button: #2196F3;
     --background-colors-filter-button: #F5F4FA;
     --background-colors-filter-button-hover-focus-active: #2196F3;
+    --color-header-border-bottom: #ECECEC;
     --color-text-button-hero: #FFFFFF;
     --color-text-button-filter: #212121;
     --color-text-button-filter-active: #FFFFFF;
@@ -28,26 +29,66 @@
 
 }
 
-.body {
+.body,
+.portfolio-body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.2em;
 
     background-color: var(--background-color-body);
     box-shadow: var(--color-shadow-body);
+
     color: var(--main-text-color);
 
 }
 
-.portfolio-body {
+.container {
+    width: 1200px;
+
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px; 
+    
+}
+
+.block {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 }
 
-a, ul  { 
+.link,
+.list  { 
     list-style-type: none;
     text-decoration: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3  {
+margin-top: 0;
+
+color: var(--color-heading);
+
+text-align: center;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
 /*Header*/
 /*Logotype WebStudio*/
 
@@ -57,8 +98,16 @@ a, ul  {
     letter-spacing: 0.02em;
 
     background-color: var(--background-color-body);
-     
+    border-color: var(--color-header-border-bottom);
+
+    padding-top: 24px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid;
+
+
+
 }
+
 
 .logo-header,.logo-footer:link  {
     font-family: 'Raleway';
@@ -113,11 +162,19 @@ a, ul  {
 .header-mail,
 .header-phone {
     color: var(--main-text-color);
+
+    text-decoration: none;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    
 }
 
 .header-mail:hover,
 .header-mail:focus {
     color: var(--color-header-mail-hover-focus);
+
     text-decoration: underline;
 }
 
@@ -141,6 +198,7 @@ a, ul  {
 
     background-color: var(--background-color-second);
     
+
 }
 
 .headline {
@@ -151,6 +209,10 @@ a, ul  {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-text-color-second);
+
+    margin-top: 0;
+    margin-bottom: 30px;
+   
    
 }
 
@@ -171,7 +233,10 @@ a, ul  {
     border: none;
     color: var(--color-text-button-hero);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        
+
+    display: block;
+    margin: auto;
+
 }
 
 .button-hero:hover {
@@ -205,15 +270,20 @@ a, ul  {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
 
-    color: var(--color-heading);
+    margin-bottom: 10px;
 }
 
 .benefits-description {
     font-style: regular;
     font-size: 14px;
     line-height: 1.7em;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
+    
+    width: 270px;
+    
 }
 
 .what-we-do-section {
@@ -229,6 +299,13 @@ a, ul  {
 
     color: var(--color-heading);
 
+    margin-bottom: 50px;
+
+}
+
+
+.what-we-do-list {
+    width: 370px;
 }
 
 .our-team-section {
@@ -244,11 +321,29 @@ a, ul  {
 
     color: var(--color-heading);
 
+    margin-bottom: 50px;
+
 }
 
-.team-members {
-   background-color:var(--background-color-body);
+.team-members,
+.crew {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
+
+.team-members {
+    width: 270px;
+
+    background-color:var(--background-color-body);
+}
+
+.crew {
+    padding-top: 30px;
+    padding-bottom: 30px;   
 }
 
 .names {
@@ -259,6 +354,7 @@ a, ul  {
     color: var(--color-heading);
 
     text-align: center;
+    margin-bottom: 10px;
         
    
 }
@@ -342,6 +438,8 @@ a, ul  {
 
 .footer {
     background-color: var(--background-color-second);
+    padding-top: 60px;
+    padding-bottom: 60px;
     
 }
 
@@ -358,6 +456,7 @@ a, ul  {
 
 .map-address:link {
     color: var(--color-map-address);
+
     text-shadow: 0px 4px 4px var(--color-map-address-shadow);
  
 }
@@ -379,3 +478,17 @@ a, ul  {
     color: var(--color-contacts-footer);
 }
 
+/*.footer-links,
+.footer-list { 
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 0;
+}*/
+
+.adress-footer {
+    margin-top: 28px;
+}
+
+.source {
+    margin-bottom: 12px;
+}
