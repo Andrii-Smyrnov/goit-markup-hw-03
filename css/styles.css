@@ -40,6 +40,8 @@
     box-shadow: var(--color-shadow-body);
 
     color: var(--main-text-color);
+    width: 1600px;
+    margin: 0px auto;
 
 }
 
@@ -62,6 +64,8 @@
 .list  { 
     list-style-type: none;
     text-decoration: none;
+
+    color: inherit;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -90,6 +94,7 @@ img {
     height: auto;
     
 }
+
 /*Header*/
 /*Logotype WebStudio*/
 
@@ -105,10 +110,7 @@ img {
     padding-bottom: 23px;
     border-bottom: 1px solid;
 
-
-
 }
-
 
 .logo-header,.logo-footer:link  {
     font-family: 'Raleway';
@@ -137,7 +139,6 @@ img {
 .web-logo {
     color: var(--color-web-logo);
 }
-
 
 .homepage:hover,
 .homepage:focus,
@@ -169,7 +170,6 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    
 }
 
 .header-mail:hover,
@@ -198,8 +198,9 @@ img {
 .hero-section {
 
     background-color: var(--background-color-second);
-    
 
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .headline {
@@ -213,7 +214,6 @@ img {
 
     margin-top: 0;
     margin-bottom: 30px;
-   
    
 }
 
@@ -337,6 +337,7 @@ img {
 
 .team-members {
     width: 270px;
+
     background-color:var(--background-color-body);
 }
 
@@ -366,7 +367,6 @@ img {
 
 .filter-buttons-list {
     margin-bottom: 50px;
-
 
 }
 
