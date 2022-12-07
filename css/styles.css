@@ -69,12 +69,14 @@
 
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 0;
     padding-left: 0;
 }
 
 p {
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 0;
 }
 
 h1,
@@ -112,11 +114,35 @@ img {
 
 }
 
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.navigation,
+.link-header-list,
+.contacts-item {
+    display: flex;
+}
+
+.link-header-items {
+    margin-right: 50px;
+}
+
+.link-header-items:last-child {
+    margin-right: 0px;
+}
+
+
 .logo-header,.logo-footer:link  {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
+    margin-right: 93px;
     
 }
 .logo-header:link{
@@ -149,12 +175,17 @@ img {
 .contacts-header-menu:hover,
 .contacts-header-menu:focus {
     color: var(--color-header-menu-hover-focus);
+
+    
 }
 
 .portfolio-header, 
 .contacts-header-menu,
 .homepage {
     color: var(--color-header-menu);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .homepage:visited {
@@ -169,7 +200,12 @@ img {
 
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-right: 40px;
 
+}
+
+.header-phone {
+    margin-right: 0px;
 }
 
 .header-mail:hover,
@@ -210,6 +246,7 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
     color: var(--main-text-color-second);
 
     margin-top: 0;
@@ -266,6 +303,21 @@ img {
     margin: -1px;
 }
 
+
+.benefits-list {
+    display: flex;
+}
+
+.benefits-list-item {
+    margin-right: 30px;
+}
+
+.benefits-list-item:last-child {
+    margin-right: 0px;
+}
+
+
+
 .heading-benefits{
     font-style: bold;
     font-weight: 700;
@@ -282,8 +334,8 @@ img {
     font-size: 14px;
     line-height: 1.7em;
     letter-spacing: 0.03em;
-    
     width: 270px;
+
     
 }
 
@@ -306,7 +358,9 @@ img {
 
 
 .what-we-do-list {
-    width: 370px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .our-team-section {
@@ -327,23 +381,22 @@ img {
 }
 
 .team-members {
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-                0px 1px 1px rgba(0, 0, 0, 0.14),
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-
-.team-members {
-    width: 270px;
-
-    background-color:var(--background-color-body);
+    display: flex;
+    justify-content: space-between;
 }
 
 .crew {
     padding-top: 30px;
     padding-bottom: 30px;   
+    width: 270px;
+
+    background-color: var(--background-color-body);
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .names {
