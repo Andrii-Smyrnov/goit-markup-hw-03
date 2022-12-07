@@ -1,2 +1,2 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 Репозиторій для зберігання домашніх завдань з html+css
