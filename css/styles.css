@@ -108,32 +108,36 @@ img {
     background-color: var(--background-color-body);
     border-color: var(--color-header-border-bottom);
 
-    padding-top: 24px;
-    padding-bottom: 23px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     border-bottom: 1px solid;
 
 }
 
-.header-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-}
-
-
+.header-flexbox,
 .navigation,
 .link-header-list,
 .contacts-item {
+
     display: flex;
 }
 
-.link-header-items {
-    margin-right: 50px;
+.header-flexbox {
+    align-items: center;
+    justify-content: space-between;
 }
 
-.link-header-items:last-child {
-    margin-right: 0px;
+.navigation {
+    gap: 93px;
+}
+
+.link-header-list {
+    gap: 50px;
+}
+
+.contacts-item {
+    gap: 40px;
 }
 
 
@@ -142,7 +146,6 @@ img {
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
-    margin-right: 93px;
     
 }
 .logo-header:link{
@@ -181,10 +184,12 @@ img {
 
 .portfolio-header, 
 .contacts-header-menu,
-.homepage {
+.homepage,
+.main-page,
+.portfolio-page-menu {
     color: var(--color-header-menu);
 
-    padding-top: 32px;
+    padding-top:  32px;
     padding-bottom: 32px;
 }
 
@@ -200,12 +205,8 @@ img {
 
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-right: 40px;
+    
 
-}
-
-.header-phone {
-    margin-right: 0px;
 }
 
 .header-mail:hover,
