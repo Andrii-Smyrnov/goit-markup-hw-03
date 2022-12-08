@@ -485,6 +485,9 @@ img {
 
 }
 
+.portfolio-card-flex {
+    display: flex;
+}
 
 
 .projects-portfolio-list {
